@@ -1,11 +1,10 @@
 # jailbreak-cabal-ci.nix
 
 { jailbreakCabalSrc ? { outPath = ../jailbreak-cabal; revCount = 0; gitTag = "dirty"; }
-, supportedSystems ? ["x86_64-linux"]
 , supportedCompilers ? ["ghc784" "ghc7103" "ghc801"]
 }:
 
-with (import <nixpkgs> { inherit supportedSystems; });
+with (import <nixpkgs> {});
 
 let
 
