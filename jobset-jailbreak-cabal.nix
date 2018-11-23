@@ -5,7 +5,7 @@
 , supportedCompilers ? ["ghc784" "ghc7103" "ghc801"]
 }:
 
-with (import <nixpkgs> { inherit supportedSystems; });
+with (import <nixos> { inherit supportedSystems; });
 
 let
 
